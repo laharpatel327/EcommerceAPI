@@ -24,3 +24,29 @@ The API accepts list of watches (string) as a request and return the total price
 
 ![image](https://github.com/laharpatel327/EcommerceAPI/assets/145035859/150ca7f8-b2f0-4348-bd35-110b9f9f9d44)
 
+Below is the WatchCatalogue table created
+
+USE [Catalog]
+GO
+
+/****** Object:  Table [dbo].[WatchCatalogue]    Script Date: 9/14/2023 5:41:13 PM ******/
+SET ANSI_NULLS ON
+GO
+
+SET QUOTED_IDENTIFIER ON
+GO
+
+CREATE TABLE [dbo].[WatchCatalogue](
+	[WatchId] [int] IDENTITY(1,1) NOT NULL,
+	[WatchName] [varchar](50) NOT NULL,
+	[UnitPrice] [int] NOT NULL,
+	[discount] [int] NULL,
+	[Quantity] [int] NULL,
+PRIMARY KEY CLUSTERED 
+(
+	[WatchId] ASC
+)WITH (PAD_INDEX = OFF, STATISTICS_NORECOMPUTE = OFF, IGNORE_DUP_KEY = OFF, ALLOW_ROW_LOCKS = ON, ALLOW_PAGE_LOCKS = ON, OPTIMIZE_FOR_SEQUENTIAL_KEY = OFF) ON [PRIMARY]
+) ON [PRIMARY]
+GO
+
+
