@@ -5,7 +5,7 @@ VisualStudioVersion = 17.3.32804.467
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "EcommerceCheckoutAPI", "EcommerceCheckoutAPI\EcommerceCheckoutAPI.csproj", "{3A1BC379-2D1B-4772-BC71-953416CA5EE1}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CheckoutWebapiTests", "TestProject1\CheckoutWebapiTests.csproj", "{43E3A003-3FBC-44F9-B7BF-CED4EE43FD0F}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CheckoutWebapi.UnitTests", "TestProject1\CheckoutWebapi.UnitTests.csproj", "{43E3A003-3FBC-44F9-B7BF-CED4EE43FD0F}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

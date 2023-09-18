@@ -1,22 +1,20 @@
-using CheckoutWebapiTests;
 using EcommerceCheckoutAPI.Controllers;
 using EcommerceCheckoutAPI.Models;
 using EcommerceCheckoutAPI.Repositories;
 using EcommerceCheckoutAPI.Services;
 using Microsoft.AspNetCore.Mvc;
 using webapitests;
-using static CheckoutWebapiTests.CatalogRepositoryFake;
 
 namespace webapitests
 {
-    public class CheckoutAPIControllerTest
+    public class CheckoutAPIWebApiTest
     {
         private readonly ICatalogService _service;
         private readonly ICatalogRepository _catalogRepository;
         private readonly CatalogContext _context;
         private readonly CheckoutController _checkoutController;
 
-        public CheckoutAPIControllerTest()
+        public CheckoutAPIWebApiTest()
         {
             _context = new CatalogContext();
             _catalogRepository = new CatalogRepository(_context);
@@ -35,9 +33,9 @@ namespace webapitests
                 "Swatch"
             };
             // Act
-            var result = _checkoutController.GetCheckoutPrice(_watches);
+            var result = _service.GetCheckoutPrice(_watches);
             // Assert
-            Assert.IsType<Double>(result);
+            Assert.IsType<double>(result);
             Assert.Equal(330, result);
         }
     }

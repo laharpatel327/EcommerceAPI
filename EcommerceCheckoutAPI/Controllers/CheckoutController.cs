@@ -16,10 +16,14 @@ namespace EcommerceCheckoutAPI.Controllers
         }
 
         [HttpGet]
-        public Double GetCheckoutPrice([FromQuery] List<string> watches)
+        public ActionResult<CatalogResponse> GetCheckoutPrice([FromQuery] List<string> watches)
         {
             var totalPrice = _catalogService.GetCheckoutPrice(watches);
-            return totalPrice;
+            var catalogResponse = new CatalogResponse
+            {
+                Price = totalPrice
+            };
+            return catalogResponse;
         }
     }
 }
