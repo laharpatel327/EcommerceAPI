@@ -1,7 +1,7 @@
 # EcommerceAPI
 Checkout endpoint added to calculate the toal price for all watches requested.
 
-\\ Checkout Endpoint is added to this project to do calculation on final prices based on the discount prices. 
+\\ Checkout Endpoint is added to this project to do calculation on number of watches based on the discount prices. 
 Two projects are added:
 EcommerceCheckoutAPI
 CheckoutWebApi.UnitTests
