@@ -1,7 +1,7 @@
 # EcommerceAPI
-Checkout endpoint added to calculate the toal price for all watches requested.
+Checkout endpoint added to calculate the total price with discounts applied for all watches requested.
 
-\\ Checkout Endpoint is added to this project to do calculation on number of watches based on the discount prices. 
+\\ Checkout Endpoint is added to this project to do calculation on number of watches based on the discounted prices. 
 Two projects are added:
 EcommerceCheckoutAPI
 CheckoutWebApi.UnitTests
@@ -12,11 +12,11 @@ Also run the unit tests using test explorer. I have included one of the unit tes
 I have used database to store the list given. I've not attached the database here in the GIT repo. Not sure how to do that.  
 Unit Price is the actual price, discounted price is in discount and quantity is how many quantities applicable for the discounted price. 
 
-WatchId	WatchName	   UnitPrice	 discount	  Quantity
+WatchId	      WatchName	      UnitPrice	       discount	  Quantity
 1	      Rolex	         100	         200	    3
-2	      Michael Kors    80	         120	    2
-3	      Swatch	        50	         NULL	    NULL
-4	      Casio	          30	         NULL	    NULL
+2	      Michael Kors       80	         120	    2
+3	      Swatch	         50	         NULL	    NULL
+4	      Casio	         30	         NULL	    NULL
 
 The API accepts list of watches (string) as a request and return the total price when checking out. Below are the images of successful returned responses. 
 
